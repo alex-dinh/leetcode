@@ -1,5 +1,7 @@
-# Meeting Rooms
-
+# Meeting Scheduler
+# (AKA Meeting Planner, AKA Time Planner)
+# https://leetcode.com/problems/meeting-scheduler/
+# https://www.youtube.com/watch?v=i2bBG7CaVxs
 '''
 Given two sets of available time slots for two people,
 find the first possible meeting time that is at least
@@ -10,7 +12,6 @@ Example:
     slotsB = [[0, 15], [60, 70]]
     duration = 8
 '''
-
 
 def findMeeting(slotsA, slotsB, dur):
     # slotsA: available time slots for person A, array of pairs
