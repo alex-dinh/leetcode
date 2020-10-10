@@ -30,11 +30,8 @@ def middleNode_2pass(head: ListNode) -> ListNode:
 def middleNode_ptrs(head: ListNode) -> ListNode:
     sp = head  # slow pointer
     fp = head  # fast pointer
-    while fp:
-        if fp.next:
-            sp = sp.next
-            fp = fp.next.next
-        else:
-            break
+    while fp and fp.next:
+        sp = sp.next
+        fp = fp.next.next
 
     return sp
