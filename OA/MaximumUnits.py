@@ -23,6 +23,9 @@ def getMaxUnits(boxes: List[int], unitsPerBox: List[int], truckSize: int) -> int
 
     res = 0
 
+    # "adding" boxes to the truck
+    # get the box with most units from heap, calculate how many units can be shipped
+    # taking min() is faster than iterating 1 by 1
     while truckSize > 0 and heap:
         curr_max = heapq.heappop(heap)
         max_boxes = min(truckSize, curr_max[1])
